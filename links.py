@@ -3,7 +3,7 @@ from config import filename
 
 github_urls = []
 
-with open(filename, 'rb') as f:
+with open(filename, 'r') as f:
     reader = csv.reader(f)
     next(reader) # skip first header
     next(reader) # skip second header

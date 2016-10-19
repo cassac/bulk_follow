@@ -23,7 +23,8 @@ for url in github_urls:
     driver.find_elements_by_xpath("//button[@aria-label='Follow this person']")[1].click()
     print('SUCCESS: added ' + github_handle + "'s Github")
   except:
-    print('ERROR: ' + github_handle + "'s Github handle may be incorrect.")
+    print('ERROR:', github_handle, "'s Github handle may be incorrect or",
+      "you are already following them.")
   time.sleep(1)
 
 driver.close()
