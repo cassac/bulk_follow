@@ -7,8 +7,7 @@ urls = [
 'https://www.thisisok.com/myname']
 
 def url_checker(url):
-  first_five = url[:5]
-  if first_five != 'https://www':
+  if url[:11] != 'https://www':
     part1 = url.split('//')[-1]
     part2 = part1.split('www.')[-1]
     url = 'https://www.' + part2
