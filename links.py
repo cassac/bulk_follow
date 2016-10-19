@@ -12,4 +12,4 @@ with open(filename, 'rb') as f:
         if (len(url)):
           github_urls.append(url)
         else:
-          print '# ' + row[0] + ' ' + row[1] + "'s github is blank"
+          print('# ' + row[0] + ' ' + row[1] + "'s github is blank")

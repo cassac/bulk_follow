@@ -15,15 +15,15 @@ driver.find_element_by_name('password').send_keys(password)
 driver.find_element_by_name('commit').click()
 
 # Iterate through friends
-for url in github_urls[34:]:
+for url in github_urls:
   github_handle = url.split('/')[-1]
   try:
     driver.get(url)
     time.sleep(1)
     driver.find_elements_by_xpath("//button[@aria-label='Follow this person']")[1].click()
-    print 'SUCCESS: added ' + github_handle + "'s Github"
+    print('SUCCESS: added ' + github_handle + "'s Github")
   except:
-    print 'ERROR: ' + github_handle + "'s Github handle may be incorrect."
+    print('ERROR: ' + github_handle + "'s Github handle may be incorrect.")
   time.sleep(1)
 
 driver.close()
