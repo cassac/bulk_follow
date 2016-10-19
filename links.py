@@ -5,10 +5,15 @@ github_urls = []
 
 with open(filename, 'r') as f:
     reader = csv.reader(f)
-    next(reader) # skip first header
-    next(reader) # skip second header
+    # The first two rows are headers and are skipped.
+    # Can be added by copying and pasting or deleted
+    # as needed
+    next(reader) # skip first row header
+    next(reader) # skip second row header
     for row in reader:
-        url = row[2] # Github URL is located in 2nd row
+        # Github URL is located in 3rd column. Your 
+        # .csv file may be be different. 
+        url = row[2] # Adjust column if needed 
         if (len(url)):
           github_urls.append(url)
         else:
