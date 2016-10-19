@@ -20,6 +20,6 @@ The Github script `follow_gh.py` will follow users. The LinkedIn script `follow_
 **LinkedIn** 
   * In the terminal type `python follow_li.py` or `python3 follow_li.py`
 
-* Some people's Github and/or LinkedIn handles may be missing, contain typos or have already been followed. Feedback will be provided in the terminal when running the script.
+_Some people's Github and/or LinkedIn handles may be missing, contain typos or have already been followed. Feedback will be provided in the terminal when running the script._
 
-* These scripts DO NOT save your account information/credentials anywhere. Author is not responsible for misuse of these scripts. Use at your own risk.
+_These scripts DO NOT save your account information/credentials anywhere. Author is not responsible for misuse of these scripts. Use at your own risk._
