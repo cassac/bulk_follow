@@ -14,7 +14,7 @@ driver.find_element_by_name('session_password').send_keys(li_password)
 driver.find_element_by_id('login-submit').click()
 
 # Iterate through friends
-for url in linkedin_urls[:5]:
+for url in linkedin_urls:
   linkedin_handle = url.split('/')[-1]
 
   try:
