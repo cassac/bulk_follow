@@ -2,6 +2,7 @@ import csv
 from config import filename
 
 github_urls = []
+linkedin_urls = []
 
 with open(filename, 'r') as f:
     reader = csv.reader(f)
@@ -13,8 +14,15 @@ with open(filename, 'r') as f:
     for row in reader:
         # Github URL is located in 3rd column. Your 
         # .csv file may be be different. 
-        url = row[2] # Adjust column if needed 
-        if (len(url)):
-          github_urls.append(url)
+        github_url = row[2] # Adjust column if needed 
+        if (len(github_url)):
+          github_urls.append(github_url)
         else:
           print('# ' + row[0] + ' ' + row[1] + "'s github is blank")
+        # Linkedin URL is located in 4th column. Your 
+        # .csv file may be be different. 
+        linkedin_url = row[3] # Adjust column if needed 
+        if (len(linkedin_url)):
+            linkedin_urls.append(linkedin_url)
+        else:
+            print('# ' + row[0] + ' ' + row[1] + "'s linkedin is blank")
