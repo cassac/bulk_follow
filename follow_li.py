@@ -26,7 +26,12 @@ for url in linkedin_urls:
   try:
     driver.find_element_by_xpath("//a[@data-action-name='add-to-network']").click()
     time.sleep(1)
-    driver.find_element_by_xpath("//label[contains(., 'Friend')]").click()
+    try:
+      # Not all invitation pages have this option, especially if user has
+      # not filled out profile information
+      driver.find_element_by_xpath("//label[contains(., 'Friend')]").click()
+    except:
+      pass
     driver.find_element_by_id('send-invite-button').click()
     print('SUCCESS: sent invitation to ' + linkedin_handle)
   except:
