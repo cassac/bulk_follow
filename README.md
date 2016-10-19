@@ -2,21 +2,14 @@
 
 1) Download spreadsheet file as '.csv' and place in this repo's root directory
 
-2) Change `config.example.py` to `config.py` and fill in Github username and password along with .csv filename.
+2) Change `config.example.py` to `config.py` and fill in Github username and password along with .csv filename
 
-3) Install dependency. In terminal type `pip install -r requirements.txt`
+3) Install `pip`: Mac OS: `sudo easy_install pip`. Linux: `sudo apt-get install python-pip`. 
 
-4) Execute script. In the terminal type `python follow.py`
+4) Install Python dependencies: Navigate to root directory of repo and in terminal type `pip install -r requirements.txt`
 
-**
-- Some people's Github handles may have typos or are not listed. Check the terminal for prompts.
+5) Install `chromedriver`. Mac OS: `brew install chromedriver`. Linux: http://stackoverflow.com/a/24364290
 
-**
-- Requires `pip`. If you don't have it go here http://stackoverflow.com/search?q=install+pip
+5) Execute script. In the terminal type `python follow.py` or `python3 follow.py`
 
-**
-- Requires `chromedriver`. Try running script and if there is a problem then go and download it. https://sites.google.com/a/chromium.org/chromedriver/
-
-- Download, unzip and place in /usr/bin
-
-- If having problems reference http://stackoverflow.com/questions/8255929/running-webdriver-chrome-with-selenium
+*Some people's Github handles may have typos or have already been followed. Feedback will be provided in the terminal when running the script
