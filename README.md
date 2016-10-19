@@ -20,6 +20,9 @@ The Github script `follow_gh.py` will follow users. The LinkedIn script `follow_
 **LinkedIn** 
   * In the terminal type `python follow_li.py` or `python3 follow_li.py`
 
+**Troubleshooting**
+  * Mac users: When running the scripts if there is an error message pertaining to Chrome driver not found then your Chrome brower may not be installed in the location. Reinstall `google-chrome` using this command `brew cask install google-chrome`.
+
 _Some people's Github and/or LinkedIn handles may be missing, contain typos or have already been followed. Feedback will be provided in the terminal when running the script._
 
 _These scripts DO NOT save your account information/credentials anywhere. Author is not responsible for misuse of these scripts. Use at your own risk._
