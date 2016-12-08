@@ -2,7 +2,7 @@
 
 The Github script `follow_gh.py` will follow users. The LinkedIn script `follow_li.py` will send a invitation for each user or if the user has already sent you an invitation the script will automatically accept their invitation.
 
-1) Download spreadsheet file as `.csv` and place in this repo's root directory
+1) Place your .csv file in this repo's root directory. Make sure GitHub and LinkedIn user handles are located in the 3rd and 4th column and start on the 3rd row. Reference the format in `contacts.example.csv` for clarification.
 
 2) Change `config.example.py` to `config.py` and fill in Github username and password along with .csv filename
 
