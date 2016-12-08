@@ -25,7 +25,7 @@ for url in linkedin_urls:
   
   try:
     driver.find_element_by_xpath("//a[@data-action-name='add-to-network']").click()
-    time.sleep(1)
+    time.sleep(0.5)
     try:
       # Not all invitation pages have this option, especially if user has
       # not filled out profile information
@@ -41,6 +41,6 @@ for url in linkedin_urls:
     except:
       print('WARNING: You may already be connected with ' + linkedin_handle)
       
-  time.sleep(1)
+  time.sleep(0.5)
 
 driver.close()

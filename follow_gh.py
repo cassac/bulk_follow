@@ -20,7 +20,7 @@ for url in github_urls:
 
   try:
     driver.get(url)
-    time.sleep(1)
+    time.sleep(0.5)
   except:
     print('ERROR: Invalid URL:' + url)
     continue
@@ -30,6 +30,6 @@ for url in github_urls:
     print('SUCCESS: added ' + github_handle + "'s Github")
   except:
     print('WARNING: ' + github_handle + "'s Github handle may be incorrect or, you are already following them")
-  time.sleep(1)
+  time.sleep(0.5)
 
 driver.close()
