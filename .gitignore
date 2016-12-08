@@ -1,4 +1,4 @@
 *.pyc
-*.csv
+contacts.csv
 config.py
 env
