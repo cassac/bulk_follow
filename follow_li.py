@@ -24,15 +24,9 @@ for url in linkedin_urls:
     continue
   
   try:
-    driver.find_element_by_xpath("//a[@data-action-name='add-to-network']").click()
+    driver.find_element_by_xpath("//*[@id='profile-wrapper']/div[3]/div[1]/section/div[3]/div[2]/button").click()
     time.sleep(0.5)
-    try:
-      # Not all invitation pages have this option, especially if user has
-      # not filled out profile information
-      driver.find_element_by_xpath("//label[contains(., 'Friend')]").click()
-    except:
-      pass
-    driver.find_element_by_id('send-invite-button').click()
+    driver.find_element_by_xpath("//div[@class='modal-wormhole-content']/div/section/div/div[2]/button[2]").click()
     print('SUCCESS: sent invitation to ' + linkedin_handle)
   except:
     try:
