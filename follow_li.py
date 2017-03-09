@@ -30,7 +30,7 @@ for url in linkedin_urls:
     print('SUCCESS: sent invitation to ' + linkedin_handle)
   except:
     try:
-      driver.find_element_by_xpath("//a[@data-action-name='accept-invitation']").click()
+      driver.find_element_by_xpath('//span[text()="Accept"]').click()
       print('SUCCESS: accepted invitation from ' + linkedin_handle)
     except:
       print('WARNING: You may already be connected with ' + linkedin_handle)
